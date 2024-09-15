@@ -1,6 +1,5 @@
 package lab0;
 
-import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -26,7 +25,7 @@ public class task2 {
         fw.close();
     }
 
-    public static long fibonacci(int n) throws IOException {
+    public static long fibonacci(int n) {
             /*if (n <= 1) {
                 return n;
             } else {
@@ -35,7 +34,7 @@ public class task2 {
 
         //linear algorithm goes here
         //разово (циклом) считаем наше число. числа (n - k) не хранятся в памяти
-        long curr = 1, prev = 1, novi = 0;
+        long curr = 1, prev = 1;
         for (int i = 0; i < n - 2; i++) {
             long t = curr;
             curr += prev;
