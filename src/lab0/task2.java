@@ -7,12 +7,12 @@ import java.util.Scanner;
 
 public class task2 {
     public static void main(String[] args) throws IOException{
-        FileReader fr = new FileReader("src/input.txt");
+        FileReader fr = new FileReader("src/lab0/input.txt");
         Scanner scanner = new Scanner(fr);
         int n = scanner.nextInt();
         fr.close();
 
-        FileWriter fw = new FileWriter("src/output.txt");
+        FileWriter fw = new FileWriter("src/lab0/output.txt");
 
         if (n <= 0) {
             System.out.println("please, put the Natural number from 1 to 45 (there is no 0' number in Fibonacci sequence)");

@@ -11,13 +11,13 @@ public class task1 {
         System.out.println(a + b);
         System.out.println(a + b * b);
 
-        FileReader fr = new FileReader("src/input.txt");
+        FileReader fr = new FileReader("src/lab0/input.txt");
         Scanner fscan = new Scanner(fr);
         a = fscan.nextInt();
         b = fscan.nextInt();
         fr.close();
 
-        FileWriter fw = new FileWriter("src/output.txt");
+        FileWriter fw = new FileWriter("src/lab0/output.txt");
         fw.write((a + b) + "\n");
         fw.write(String.valueOf(a + b * b));
         fw.close();
