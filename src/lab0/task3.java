@@ -21,10 +21,7 @@ public class task3 {
         int n = new Scanner(fr).nextInt();
         fr.close();
 
-        //calculate F(22) and its %10
         int prev = (int) (fibonacci(1) % 10);
-
-        //calculate F(23) and its %10
         int curr = (int) (fibonacci(2) % 10);
 
         //keep going in cycle until n
@@ -37,7 +34,6 @@ public class task3 {
         FileWriter fw = new FileWriter("src/lab0/output.txt");
         fw.write(String.valueOf(curr));
         fw.close();
-        //System.out.println(curr);
 
         System.out.printf("Total memory: %,d (KB)\n", totalMemory/kb);
         System.out.printf("Free memory: %,d (KB)\n", freeMemory/kb);
@@ -47,7 +43,6 @@ public class task3 {
     }
 
     public static long fibonacci(int n) {
-        //linear O(n)
         //разово (циклом) считаем наше число. числа (n - k) не хранятся в памяти
         long curr = 1, prev = 1;
         for (int i = 0; i < n - 2; i++) {
