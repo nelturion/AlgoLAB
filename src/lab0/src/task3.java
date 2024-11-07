@@ -1,4 +1,4 @@
-package lab0;
+package lab0.src;
 
 import java.io.FileReader;
 import java.io.FileWriter;
